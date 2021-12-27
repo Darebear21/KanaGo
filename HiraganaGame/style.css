@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #e0c1bf;
+}
+
+header {
+    margin: 0px;
+    background-color: #3b120f;
+    padding: 1px;
+}
+
+main {
+    background-color: #491b19;
+    padding: 1px;
+    margin: 0px;
+}
+
+footer {
+    background-color: #491b19;
+    padding: 1px;
+    color: #e0c1bf;
+}
+
+.timer {
+    margin-left: auto;
+    text-align: center;
+    width: 50px;
+    background-color: #e0c1bf;
+}
+
+.japanese {
+    margin: 0px auto 20px;
+    text-align: center;
+    width: 270px;
+    font-size: 150px;
+    padding: 0px;
+    background-color: #e0c1bf;
+    color: #3b120f;
+}
+
+.inputs {
+    margin: 0px auto;
+    width: 176px;
+}
+
+#input-el {
+    margin: 3px auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid#3b120f;
+}
+
+button {
+    background-color: #3b120f;
+    color: #e0c1bf;
+    border: 2px solid #e0c1bf;
+    padding: 5px 10px;
+}
