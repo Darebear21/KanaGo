@@ -1,0 +1,2 @@
+# KanaGo
+Hiragana Typeracer
