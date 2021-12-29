@@ -76,6 +76,7 @@ const startTime = 20
 let solution = ""
 let score = 0
 let gameStarted = false
+let highScore = localStorage.getItem("high-score")
 
 inputEl.addEventListener("input", function() {
     if (gameStarted) {
@@ -96,8 +97,11 @@ function renderKana() {
 }
 
 function renderResults() {
+    highScore = Math.max(highScore, score)
+    localStorage.setItem("high-score", highScore)
     resultsEl.textContent = `Results: ${score} characters, 
-                            ${score * 60 / startTime} cpm`
+                            ${score * 60 / startTime} cpm
+                            \n\tHigh Score: ${highScore} characters`
 }
 
 // Timer:
@@ -106,6 +110,7 @@ let second = 0
 
 startBtn.addEventListener("click", function() {
     gameStarted = true
+    score = 0
     renderKana()
 
     second = 0
